@@ -1,0 +1,22 @@
+# pyproject.toml
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py312"
+extend-select = ["I"] 
+
+[tool.ruff.format]
+quote-style = "single"
+line-ending = "auto"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = true
+docstring-code-line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "N", "B"]
+ignore = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["Factor0-MVP"]
+force-single-line = false
