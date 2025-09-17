@@ -10,6 +10,10 @@ alias gc="git commit --verbose"
 alias gl="git pull"
 alias gp="git push"
 alias gst"git status"
+alias glo="git log --oneline --decorate"
+alias grs="git restore"
+alias gclean"git clean --interactive -d"
+alias gcl="git clone --recurse-submodules"
 
 alias lg="lazygit"
-
+alias v="nvim"
