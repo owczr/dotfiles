@@ -74,6 +74,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-vi-mode
+  direnv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -229,8 +230,9 @@ fi
 #
 # eval "$(zoxide init zsh)"
 #
-source /Users/kuba/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source $ZSH_CUSTOM/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -253,8 +255,18 @@ source <(fzf --zsh)
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 eval "$(direnv hook zsh)"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/kuba/.lmstudio/bin"
-# End of LM Studio CLI section
+# # Added by LM Studio CLI (lms)
+# export PATH="$PATH:/Users/kuba/.lmstudio/bin"
+# # End of LM Studio CLI section
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jakubowczarek/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export PATH="$PATH:/Users/jakubowczarek/Repos/scripts"
+
+eval "$(direnv hook zsh)"
+
+source ~/Repos/dotfiles/.aliasesrc
