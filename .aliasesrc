@@ -1,0 +1,13 @@
+alias jp="jupyter-lab"
+
+alias ll="ls -lh"
+alias la="ls -lAh"
+alias l="ls -lah"
+
+alias g="git"
+alias ga="git add"
+alias gc="git commit --verbose"
+alias gl="git pull"
+alias gp="git push"
+alias gst"git status"
+
