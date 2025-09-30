@@ -1,0 +1,20 @@
+line-length = 120
+indent-width = 4
+target-version = "py312"
+
+[format]
+quote-style = "double"
+line-ending = "auto"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = true
+docstring-code-line-length = 88
+
+[lint]
+extend-select = ["I"] 
+select = ["E", "F", "I", "UP", "N", "B"]
+ignore = []
+
+[lint.isort]
+known-first-party = ["ibm_watsonx_ai"]
+force-single-line = false
