@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -85,13 +84,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
-else
-  export EDITOR='nvim'
-fi
 
 # export ARCHFLAGS="-arch x86_64"
 # Compilation flags
@@ -252,21 +244,8 @@ unset __conda_setup
 source <(fzf --zsh)
 
 . "$HOME/.local/bin/env"
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-eval "$(direnv hook zsh)"
-
-# # Added by LM Studio CLI (lms)
-# export PATH="$PATH:/Users/kuba/.lmstudio/bin"
-# # End of LM Studio CLI section
-
-export PATH="$HOME/.local/bin:$PATH"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jakubowczarek/.lmstudio/bin"
-# End of LM Studio CLI section
-
-export PATH="$PATH:/Users/jakubowczarek/Repos/scripts"
 
 eval "$(direnv hook zsh)"
 
 source ~/Repos/dotfiles/.aliasesrc
+source ~/Repos/dotfiles/.exportsrc
