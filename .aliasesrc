@@ -17,3 +17,6 @@ alias gcl="git clone --recurse-submodules"
 
 alias lg="lazygit"
 alias v="nvim"
+alias py="python"
+alias pt="pytest"
+alias ptq=pytest -q"
