@@ -1,3 +1,6 @@
+source ~/Repos/dotfiles/.aliasesrc
+source ~/Repos/dotfiles/.exportsrc
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -247,5 +250,7 @@ source <(fzf --zsh)
 
 eval "$(direnv hook zsh)"
 
-source ~/Repos/dotfiles/.aliasesrc
-source ~/Repos/dotfiles/.exportsrc
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jakubowczarek/.lmstudio/bin"
+# End of LM Studio CLI section
+
