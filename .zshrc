@@ -253,4 +253,8 @@ eval "$(direnv hook zsh)"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/jakubowczarek/.lmstudio/bin"
 # End of LM Studio CLI section
-
+#
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home
+#
+# podman machine start
+# export DOCKER_HOST=unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')
