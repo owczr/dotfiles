@@ -20,3 +20,6 @@ alias v="nvim"
 alias py="python"
 alias pt="pytest"
 alias ptq="pytest -q"
+
+alias docker="podman"
+alias docker-compose="podman-compose"
