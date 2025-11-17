@@ -20,6 +20,10 @@ alias v="nvim"
 alias py="python"
 alias pt="pytest"
 alias ptq="pytest -q"
+alias ipy="ipython"
 
 alias docker="podman"
 alias docker-compose="podman-compose"
+
+alias autorag="~/Repos/autoai_rag/scripts/autoai_rag.sh"
+alias iclogs="~/Repos/iclogs/iclogs"
